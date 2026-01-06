@@ -1,0 +1,1 @@
+docker build -t mineru:latest -f Dockerfile .
