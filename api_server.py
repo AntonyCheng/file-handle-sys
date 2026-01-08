@@ -38,8 +38,8 @@ app.add_middleware(
 )
 
 # 创建临时目录用于存储上传的文件
-UPLOAD_DIR = Path("temp/uploads")
-OUTPUT_DIR = Path("temp/outputs")
+UPLOAD_DIR = Path("temp/libreoffice/uploads")
+OUTPUT_DIR = Path("temp/libreoffice/outputs")
 UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
