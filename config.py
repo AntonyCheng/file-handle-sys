@@ -54,4 +54,9 @@ MINERU_TIMEOUT_SECONDS: int = _get_int("MINERU_TIMEOUT_SECONDS", 120)
 MINERU_WORKER_THREADS: int = _get_int("MINERU_WORKER_THREADS", 2)
 MINERU_PARSE_PATH: str = _get_str("MINERU_PARSE_PATH", "/file_parse")
 
-
+# Ensure base temp directory exists so modules can create subdirs safely
+try:
+    Path("temp").mkdir(parents=True, exist_ok=True)
+except Exception:
+    # best-effort; if creation fails, modules will still raise meaningful errors
+    pass
