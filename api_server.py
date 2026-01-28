@@ -38,11 +38,14 @@ app.add_middleware(
 )
 from api.libreoffice import api as libreoffice_api
 from api.kkfileview import api as kkfileview_api
+from api.mineru import api as mineru_api
 
 # 挂载 libreoffice 子路由
 app.include_router(libreoffice_api.router)
 # 挂载 kkfileview 子路由
 app.include_router(kkfileview_api.router)
+# 挂载 mineru 子路由
+app.include_router(mineru_api.router)
 
 if __name__ == "__main__":
     # 启动服务器

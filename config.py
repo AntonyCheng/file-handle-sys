@@ -48,5 +48,10 @@ def _get_int(key: str, default: int = 0) -> int:
 KK_HOST_PUBLIC: str = _get_str("KK_HOST_PUBLIC", "localhost:8000")
 MAX_UPLOAD_SIZE_BYTES: int = _get_int("MAX_UPLOAD_SIZE_BYTES", 100 * 1024 * 1024)
 # TEMP_RETENTION_SECONDS removed: uploaded files are kept permanently by default
+# Mineru defaults
+MINERU_DEFAULT_BASE_URL: str = _get_str("MINERU_DEFAULT_BASE_URL", "")
+MINERU_TIMEOUT_SECONDS: int = _get_int("MINERU_TIMEOUT_SECONDS", 120)
+MINERU_WORKER_THREADS: int = _get_int("MINERU_WORKER_THREADS", 2)
+MINERU_PARSE_PATH: str = _get_str("MINERU_PARSE_PATH", "/file_parse")
 
 
