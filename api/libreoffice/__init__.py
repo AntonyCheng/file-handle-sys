@@ -1,0 +1,3 @@
+# libreoffice adapter package
+
+

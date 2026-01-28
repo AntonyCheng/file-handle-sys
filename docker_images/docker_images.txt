@@ -1,3 +1,2 @@
 gotenberg/gotenberg:8.25.1
 wangbowen/kkfileview:4.4.1
-infiniflow/ragflow:v0.23.1

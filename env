@@ -1,0 +1,7 @@
+# KKFileView / service configuration
+# 用于构造对外可访问的临时文件主机（不带协议），例如 localhost:8000 或 example.com
+KK_HOST_PUBLIC=10.9.0.86:54321
+
+# 单文件最大允许字节数（默认 100MB）
+MAX_UPLOAD_SIZE_BYTES=104857600
+ 
